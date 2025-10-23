@@ -16,5 +16,5 @@ columns:
     data_type: string
   - name: post_office_name
     data_type: string
-connection_id: con_atscale_data_gannett
+connection_id: gannett_dimensions_connection
 table: dma
