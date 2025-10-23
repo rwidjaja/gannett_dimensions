@@ -1,0 +1,6 @@
+version: 1.3
+unique_name: gannett_dimensions
+object_type: catalog
+label: gannett_dimensions
+aggressive_agg_promotion: false
+build_speculative_aggs: true

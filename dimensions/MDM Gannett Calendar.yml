@@ -1,0 +1,58 @@
+unique_name: MDM Gannett Calendar
+object_type: dimension
+label: MDM Gannett Calendar
+hierarchies:
+  - unique_name: MDM Gannett Calendar Hierarchy
+    label: MDM Gannett Calendar Hierarchy
+    levels:
+      - unique_name: Fiscal Year
+      - unique_name: Fiscal Quarter
+      - unique_name: Fiscal Period
+      - unique_name: Fiscal Week Number
+      - unique_name: Mdm Gannett Calendar
+level_attributes:
+  - unique_name: Mdm Gannett Calendar
+    label: Mdm Gannett Calendar
+    contains_unique_names: false
+    dataset: gannett_calendar
+    is_unique_key: false
+    key_columns:
+      - date
+    name_column: date
+    sort_column: date
+  - unique_name: Fiscal Year
+    label: Fiscal Year
+    contains_unique_names: false
+    dataset: gannett_calendar
+    key_columns:
+      - fiscalyear
+    name_column: fiscalyear
+    sort_column: fiscalyear
+  - unique_name: Fiscal Quarter
+    label: Fiscal Quarter
+    contains_unique_names: false
+    dataset: gannett_calendar
+    key_columns:
+      - fiscalquarter
+      - fiscalyear
+    name_column: fiscalquarter
+    sort_column: fiscal_quarter_end
+  - unique_name: Fiscal Period
+    label: Fiscal Period
+    contains_unique_names: false
+    dataset: gannett_calendar
+    key_columns:
+      - fiscalperiod
+      - fiscalyear
+    name_column: fiscalperiod
+    sort_column: fiscal_period_end
+  - unique_name: Fiscal Week Number
+    label: Fiscal Week Number
+    contains_unique_names: false
+    dataset: gannett_calendar
+    key_columns:
+      - fiscalweek
+      - fiscalyear
+    name_column: fiscalweek
+    sort_column: fiscalweekend
+type: standard

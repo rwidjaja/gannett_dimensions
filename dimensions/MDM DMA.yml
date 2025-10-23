@@ -1,0 +1,51 @@
+unique_name: MDM DMA
+object_type: dimension
+label: MDM DMA
+hierarchies:
+  - unique_name: MDM DMA Hierarchy
+    label: MDM DMA Hierarchy
+    levels:
+      - unique_name: MDM DMA Level
+        secondary_attributes:
+          - unique_name: DMA Code
+            label: DMA Code
+            contains_unique_names: false
+            dataset: dma
+            is_unique_key: false
+            key_columns:
+              - dma_code
+            name_column: dma_code
+          - unique_name: DMA Name
+            label: DMA Name
+            contains_unique_names: false
+            dataset: dma
+            is_unique_key: false
+            key_columns:
+              - dma_name
+            name_column: dma_name
+          - unique_name: CSA Code
+            label: CSA Code
+            contains_unique_names: false
+            dataset: dma
+            is_unique_key: false
+            key_columns:
+              - csa_code
+            name_column: csa_code
+          - unique_name: CBSA Name
+            label: CBSA Name
+            contains_unique_names: false
+            dataset: dma
+            is_unique_key: false
+            key_columns:
+              - cbsa_name
+            name_column: cbsa_name
+level_attributes:
+  - unique_name: MDM DMA Level
+    label: MDM DMA Level
+    contains_unique_names: false
+    dataset: dma
+    is_unique_key: false
+    key_columns:
+      - geography_id
+    name_column: geography_id
+type: standard

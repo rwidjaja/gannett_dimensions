@@ -1,0 +1,50 @@
+unique_name: gannett_calendar
+object_type: dataset
+label: gannett_calendar
+columns:
+  - name: iddate
+    data_type: int
+  - name: date
+    data_type: datetime
+  - name: dailysun
+    data_type: string
+  - name: fiscalyear
+    data_type: int
+  - name: fiscalquarter
+    data_type: int
+  - name: fiscalperiod
+    data_type: int
+  - name: fiscalweek
+    data_type: int
+  - name: weekday
+    data_type: string
+  - name: dayofweek
+    data_type: int
+  - name: fiscalweekend
+    data_type: int
+  - name: fiscalweeknumber
+    data_type: int
+  - name: gregorianweek
+    data_type: int
+  - name: gregorianperiod
+    data_type: int
+  - name: gregorianquarter
+    data_type: int
+  - name: gregorianyear
+    data_type: int
+  - name: gregorianweeknumber
+    data_type: int
+  - name: fiscal_period_end
+    data_type: int
+  - name: fiscal_quarter_end
+    data_type: int
+  - name: fiscal_year_end
+    data_type: int
+  - name: gregorian_month_end
+    data_type: int
+  - name: gregorian_quarter_end
+    data_type: int
+  - name: gregorian_year_end
+    data_type: int
+connection_id: con_atscale_data_gannett
+table: gannett_calendar

@@ -1,0 +1,6 @@
+unique_name: con_atscale_data_gannett
+object_type: connection
+label: con_atscale_data_gannett
+as_connection: Postgres14
+database: atscale_data
+schema: gannett
